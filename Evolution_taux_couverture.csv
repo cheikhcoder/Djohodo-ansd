@@ -1,0 +1,143 @@
+,structures,Date,Value
+0,Hôpital,1970,549378
+1,Hôpital,1971,563113
+2,Hôpital,1972,577190
+3,Hôpital,1973,525884
+4,Hôpital,1974,539032
+5,Hôpital,1975,552507
+6,Hôpital,1976,463353
+7,Hôpital,1977,475482
+8,Hôpital,1978,487929
+9,Hôpital,1979,458976
+10,Hôpital,1980,470991
+11,Hôpital,1981,483320
+12,Hôpital,1982,425118
+13,Hôpital,1983,381716
+14,Hôpital,1984,391708
+15,Hôpital,1985,401962
+16,Hôpital,1986,412484
+17,Hôpital,1987,423282
+18,Hôpital,1988,432035
+19,Hôpital,1989,417815
+20,Hôpital,1990,429318
+21,Hôpital,1991,441123
+22,Hôpital,1992,453166
+23,Hôpital,1993,465475
+24,Hôpital,1994,478080
+25,Hôpital,1995,490999
+26,Hôpital,1996,504235
+27,Hôpital,1997,517782
+28,Hôpital,1998,531641
+29,Hôpital,1999,516786
+30,Hôpital,2000,532363
+31,Hôpital,2001,445580
+32,Hôpital,2002,428629
+33,Hôpital,2003,449547
+34,Hôpital,2004,442489
+35,Hôpital,2005,495795
+36,Hôpital,2006,509229
+37,Hôpital,2007,523028
+38,Hôpital,2008,537200
+39,Hôpital,2009,485545
+40,Hôpital,2010,498701
+41,Hôpital,2011,376628
+42,Hôpital,2012,375781
+43,Hôpital,2013,435765
+44,Hôpital,2015,422251
+45,Hôpital,2016,435290
+46,Hôpital,2017,448716
+47,Hôpital,2018,462531
+48,Poste de  santé,1970,11505
+49,Poste de  santé,1971,11731
+50,Poste de  santé,1972,11689
+51,Poste de  santé,1973,11891
+52,Poste de  santé,1974,11361
+53,Poste de  santé,1975,11404
+54,Poste de  santé,1976,11610
+55,Poste de  santé,1977,11914
+56,Poste de  santé,1978,11953
+57,Poste de  santé,1979,11693
+58,Poste de  santé,1980,11923
+59,Poste de  santé,1981,11005
+60,Poste de  santé,1982,11445
+61,Poste de  santé,1983,11064
+62,Poste de  santé,1984,11211
+63,Poste de  santé,1985,11088
+64,Poste de  santé,1986,10837
+65,Poste de  santé,1987,10276
+66,Poste de  santé,1988,10489
+67,Poste de  santé,1989,10778
+68,Poste de  santé,1990,10975
+69,Poste de  santé,1991,11276
+70,Poste de  santé,1992,10835
+71,Poste de  santé,1993,11082
+72,Poste de  santé,1994,11087
+73,Poste de  santé,1995,11310
+74,Poste de  santé,1996,11161
+75,Poste de  santé,1997,11705
+76,Poste de  santé,1998,10250
+77,Poste de  santé,1999,10546
+78,Poste de  santé,2000,11629
+79,Poste de  santé,2001,11039
+80,Poste de  santé,2002,11357
+81,Poste de  santé,2003,11539
+82,Poste de  santé,2005,11653
+83,Poste de  santé,2006,11805
+84,Poste de  santé,2007,11741
+85,Poste de  santé,2008,11986
+86,Poste de  santé,2009,11728
+87,Poste de  santé,2010,10054
+88,Poste de  santé,2011,10187
+89,Poste de  santé,2012,10463
+90,Poste de  santé,2013,11944
+91,Poste de  santé,2015,9887
+92,Poste de  santé,2016,10150
+93,Poste de  santé,2017,9505
+94,Poste de  santé,2018,9798
+95,Centre de  santé,1970,133182
+96,Centre de  santé,1971,136512
+97,Centre de  santé,1972,139925
+98,Centre de  santé,1973,143423
+99,Centre de  santé,1974,147008
+100,Centre de  santé,1975,146252
+101,Centre de  santé,1976,149908
+102,Centre de  santé,1977,145286
+103,Centre de  santé,1978,153349
+104,Centre de  santé,1979,157363
+105,Centre de  santé,1980,152753
+106,Centre de  santé,1981,152627
+107,Centre de  santé,1982,145162
+108,Centre de  santé,1983,135721
+109,Centre de  santé,1984,136246
+110,Centre de  santé,1985,136838
+111,Centre de  santé,1986,140420
+112,Centre de  santé,1987,144096
+113,Centre de  santé,1988,147076
+114,Centre de  santé,1989,151124
+115,Centre de  santé,1990,152050
+116,Centre de  santé,1991,153042
+117,Centre de  santé,1992,154076
+118,Centre de  santé,1993,152174
+119,Centre de  santé,1994,156295
+120,Centre de  santé,1995,160519
+121,Centre de  santé,1996,161735
+122,Centre de  santé,1997,166081
+123,Centre de  santé,1998,170526
+124,Centre de  santé,1999,175512
+125,Centre de  santé,2000,177454
+126,Centre de  santé,2001,169013
+127,Centre de  santé,2002,179245
+128,Centre de  santé,2003,172326
+129,Centre de  santé,2005,162798
+130,Centre de  santé,2006,164750
+131,Centre de  santé,2007,153421
+132,Centre de  santé,2008,124404
+133,Centre de  santé,2009,155623
+134,Centre de  santé,2010,180689
+135,Centre de  santé,2011,145515
+136,Centre de  santé,2012,147779
+137,Centre de  santé,2013,148447
+138,Centre de  santé,2015,145015
+139,Centre de  santé,2016,147998
+140,Centre de  santé,2017,152563
+141,Centre de  santé,2018,157260
