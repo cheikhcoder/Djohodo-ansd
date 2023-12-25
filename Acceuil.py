@@ -22,8 +22,8 @@ client = OpenAI(
 
 
 # st.title("Bienvenue a Djohodo")
-st.markdown("<h1 style='text-align: center; '>Bienvenue a Djohodo</h1>", unsafe_allow_html=True)
-st.markdown('<style>div.block-container{padding-top:1rem;}</style>',unsafe_allow_html=True)
+st.markdown("<h2 style='text-align: center; '>Des Données, Des Perspectives, Des Solutions <br> Djohodo, Votre Partenaire de Changement 🥳 </h2>", unsafe_allow_html=True)
+st.markdown('<style>div.block-container{padding-top:2rem;}</style>',unsafe_allow_html=True)
 
 col1,col2 = st.columns(2)
 st.write("""Djohodo" révolutionne la compréhension socio-économique du Sénégal en centralisant et visualisant des données variées. Intégrant science des données, IA, et design, la plateforme stimule la culture statistique et facilite la lutte contre la pauvreté. Avec un chatbot multilingue et des modèles de prédiction, "Djohodo" inspire l'innovation et favorise une utilisation responsable des données pour un impact socio-économique positif.""")
@@ -60,13 +60,20 @@ async def chat_with_bot(cb, query):
     return await loop.run_in_executor(None, cb, {"question": query, "chat_history": []})
 
 def main():
-    st.title("Cheikh'sBot")
+    st.title("Djohodo's Bot 🤖")
+    
+    col1,col2 = st.columns(2)
+    with col1:
+        st.write("Bonjour, je suis Djohodo, votre assistant. Ma perspective englobe la réalité de la pauvreté sur l\'ensemble du territoire sénégalais. N\'hésitez pas à me poser des questions telles que :Parle-moi davantage de Djohodo.Fournis-moi un état des lieux de la pauvreté au Sénégal.?Quelle est la région présentant le taux de pauvreté le plus élevé au Sénégal ?Donne-moi des informations sur les infrastructures de santé au Sénégal?Comment a évolué le taux de chômage récemment ?Et autres...")
+    with col2:
+        original_image = Image.open("4.png")
+        st.image(original_image)
 
     # Load the database and chatbot
     cb = load_db("Prompt chatbot.pdf", "stuff", 4)
 
-    query = st.text_input("Enter your question:")
-    if st.button("Ask"):
+    query = st.text_input("Poser une question:")
+    if st.button("Demander"):
         result = asyncio.run(chat_with_bot(cb, query))
         response = result["answer"]
         st.write("ChatBot:", response)

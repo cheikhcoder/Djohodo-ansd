@@ -27,11 +27,11 @@ if choice == "Couverture Sanitaire":
     filtered_data = df[df["structures"] == selected_structure]
 
 # Afficher la courbe au cours du temps avec Plotly Express
-    fig = px.line(filtered_data, x='Date', y='Value', title=f'{selected_structure} - Évolution au cours du temps')
+    fig = px.line(filtered_data, x='Date', y='Value', title=f' Évolution du taux de couverture sanitaire pour {selected_structure} au cours du temps')
     st.plotly_chart(fig, use_container_width=True)
     
     fig = px.bar(filtered_data, x='Date', y='Value', color='structures',
-             title=f'Évolution des Valeurs par Structure au cours du temps')
+             title=f'Évolution du taux de couverture sanitaire pour {selected_structure} au cours du temps')
     st.plotly_chart(fig, use_container_width=True)
     
     
@@ -99,7 +99,7 @@ elif choice == "Condition d/'accouchements":
 
 # Afficher le graphique en barres empilées avec Plotly Express
     fig_bar = px.bar(df_max, x='regions', y='Value', color='regions',
-                 title=f"Accouchements Maximum par région ({selected_indicator})",
+                 title=f"Nombre de ({selected_indicator} par region )",
                  labels={'Value': 'Nombre d\'accouchements', 'regions': 'Région'})
     fig_bar.update_layout(xaxis_title='Région', yaxis_title='Nombre d\'accouchements')
 

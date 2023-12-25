@@ -26,22 +26,22 @@ if choice == "Bien etre economique":
      st.subheader("Bien etre economique en fonction des regions ")
      chart_type = st.selectbox("Choisissez le type de graphique", ["Diagramme Circulaire", "Diagramme en Barres"])
      if chart_type == "Diagramme Circulaire":
-             fig = px.pie(filtered_data1, values='Value', names='region', title='Diagramme Circulaire des Valeurs par Région')
+             fig = px.pie(filtered_data1, values='Value', names='region', title='Diagramme du taux de personne qui on un bien etre economique haut par Région')
              st.plotly_chart(fig, use_container_width=True)
      elif chart_type == "Diagramme en Barres":
     # Afficher le diagramme en barres avec Plotly Express
-             fig = px.bar(filtered_data1, x='region', y='Value', title='Diagramme en Barres du taux de bien etre economique  par Région')
+             fig = px.bar(filtered_data1, x='region', y='Value', title='Diagramme du taux de personne qui on un bien etre economique haut par Région')
              st.plotly_chart(fig, use_container_width=True)
              
              # plus bas 
      st.divider()        
      filtered_data2= data[data["indicateur"] == "Le plus bas"]
      if chart_type == "Diagramme Circulaire":
-             fig = px.pie(filtered_data2, values='Value', names='region', title='Diagramme Circulaire des Valeurs par Région')
+             fig = px.pie(filtered_data2, values='Value', names='region', title='Diagramme du taux de personne qui on un bien etre economique bas par Région')
              st.plotly_chart(fig, use_container_width=True)
      elif chart_type == "Diagramme en Barres":
     # Afficher le diagramme en barres avec Plotly Express
-             fig = px.bar(filtered_data2, x='region', y='Value', title='Diagramme en Barres des Valeurs par Région')
+             fig = px.bar(filtered_data2, x='region', y='Value', title='Diagramme du taux de personne qui on un bien etre economique bas par Région')
              st.plotly_chart(fig, use_container_width=True)
      
      
@@ -55,21 +55,21 @@ elif choice == "Migration":
     data = load_data("migration_emplois.csv")
     chart_type = st.selectbox("Choisissez le type de graphique", ["Diagramme Circulaire", "Diagramme en Barres"])
     if chart_type == "Diagramme Circulaire":
-             fig = px.pie(data, values='Value', names='regions', title='Diagramme Circulaire du Taux de migration par Région')
+             fig = px.pie(data, values='Value', names='regions', title='Diagramme Circulaire du Taux de migration du a l\'emploi par Région')
              st.plotly_chart(fig, use_container_width=True)
     elif chart_type == "Diagramme en Barres":
     # Afficher le diagramme en barres avec Plotly Express
-             fig = px.bar(data, x='regions', y='Value', title='Diagramme en Barres du Taux de migration  par Région')
+             fig = px.bar(data, x='regions', y='Value', title='Diagramme en Barres du Taux de migration du a l\'emploi  par Région')
              st.plotly_chart(fig, use_container_width=True)
              
     st.subheader("taux de migration du a l'innondation")
     data2 = load_data("migration_innondations.csv")
     if chart_type == "Diagramme Circulaire":
-             fig = px.pie(data2, values='Value', names='regions', title='Diagramme Circulaire du Taux de migration par Région')
+             fig = px.pie(data2, values='Value', names='regions', title='Diagramme Circulaire du Taux de migration du a l\'innondation par Région')
              st.plotly_chart(fig, use_container_width=True)
     elif chart_type == "Diagramme en Barres":
     # Afficher le diagramme en barres avec Plotly Express
-             fig = px.bar(data2, x='regions', y='Value', title='Diagramme en Barres  du Taux de migration s par Région')
+             fig = px.bar(data2, x='regions', y='Value', title='Diagramme en Barres  du Taux de migrations du a l\'innondation par Région')
              st.plotly_chart(fig, use_container_width=True)              
              
 elif choice == "Hygiene":
@@ -77,10 +77,10 @@ elif choice == "Hygiene":
     data = load_data("toilettes_non_amelioree.csv")
     chart_type = st.selectbox("Choisissez le type de graphique", ["Diagramme Circulaire", "Diagramme en Barres"])
     if chart_type == "Diagramme Circulaire":
-             fig = px.pie(data, values='Value', names='region', title='Diagramme Circulaire du Taux de toilettes non amelioree par Région')
+             fig = px.pie(data, values='Value', names='region', title='Diagramme Circulaire du Taux d\'utulisation de toilettes non amelioree par Région')
              st.plotly_chart(fig, use_container_width=True)
     elif chart_type == "Diagramme en Barres":
     # Afficher le diagramme en barres avec Plotly Express
-             fig = px.bar(data, x='region', y='Value', title='Diagramme en Barres du Taux de toilettes non amelioree  par Région')
+             fig = px.bar(data, x='region', y='Value', title='Diagramme en Barres du Taux d\'utulisation de toilettes non amelioree  par Région')
              st.plotly_chart(fig, use_container_width=True)
     

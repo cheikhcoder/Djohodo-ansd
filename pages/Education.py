@@ -32,7 +32,7 @@ if choice == "Repartition etablissements ":
 
 # Afficher le graphique en barres avec Plotly Express
     fig_bar = px.bar(df_selected_type, x='region', y='Value',
-                 title=f"Valeur de {selected_type} pour toutes les régions",
+                 title=f"Nombre de  {selected_type} par région",
                  labels={'Value': f"{selected_type} Value"})
     fig_bar.update_layout(xaxis_title='Région', yaxis_title=f"{selected_type} Value")
 
@@ -59,7 +59,7 @@ elif choice == "Population scolaire ":
 
 # Afficher le graphique en barres avec Plotly Express
     fig_bar = px.bar(df_selected, x='région', y='Value',
-                 title=f"Valeur de {selected_cycle} pour {selected_sexe} par région",
+                 title=f"Nombre d'eleves en cycle {selected_cycle} pour {selected_sexe} par région",
                  labels={'Value': f"{selected_cycle} Value", 'région': 'Région'})
     fig_bar.update_layout(xaxis_title='Région', yaxis_title=f"{selected_cycle} Value")
 

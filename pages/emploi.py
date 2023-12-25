@@ -16,12 +16,12 @@ def load_data(nom_fichier):
       df = pd.read_csv(nom_fichier)
       return df
 
-menu = [ "Nombre Salaries", "Population active", "Chomage"]
+menu = [ "Nombre Salariés", "Population active", "Chomage"]
 
 choice = st.sidebar.selectbox("Navigation", menu)
 
 # Contenu principal en fonction du choix dans le menu
-if choice == "Nombre Salaries":
+if choice == "Nombre Salariés":
     df = load_data("info_salaries.csv")
     # Liste des secteurs d'activité uniques
   
@@ -35,7 +35,7 @@ if choice == "Nombre Salaries":
     df_selected_secteur = df[df['secteurs-d-activités'] == selected_secteur]
 
 # Afficher le diagramme à barres pour l'évolution de l'effectif dans le temps
-    fig = px.bar(df_selected_secteur, x='Date', y='Value', title=f"Évolution du nobre de salaries dans le secteur {selected_secteur} dans le Temps")
+    fig = px.bar(df_selected_secteur, x='Date', y='Value', title=f"Évolution du nobre de salariés dans le secteur {selected_secteur} dans le Temps")
     fig.update_layout(xaxis_title='Année', yaxis_title='Salaries')
     st.plotly_chart(fig, use_container_width=True)
     
@@ -59,11 +59,11 @@ elif choice == "Population active":
     df_selected = df[df['indicator'] == selected_indicator]
 
 # Afficher l'évolution de la valeur avec Plotly Express (graphique linéaire)
-    fig_line = px.line(df_selected, x='Date', y='Value', title=f"Évolution de la valeur pour l'indicateur {selected_indicator}", labels={'Value': 'Valeur'})
+    fig_line = px.line(df_selected, x='Date', y='Value', title=f"Évolution de la  {selected_indicator}", labels={'Value': 'Valeur'})
     fig_line.update_layout(xaxis_title='Année', yaxis_title='Valeur')
 
 # Afficher les valeurs individuelles avec Plotly Express (graphique en barres)
-    fig_bar = px.bar(df_selected, x='Date', y='Value', title=f"Valeurs individuelles pour l'indicateur {selected_indicator}", labels={'Value': 'Valeur'})
+    fig_bar = px.bar(df_selected, x='Date', y='Value', title=f"Evolution de la {selected_indicator}", labels={'Value': 'Valeur'})
     fig_bar.update_layout(xaxis_title='Année', yaxis_title='Valeur')
 
 # Afficher les deux graphiques
@@ -92,7 +92,7 @@ elif choice == "Chomage":
     df_max_values = df_selected.groupby('Date')['Value'].max().reset_index()
 
 # Afficher la valeur maximale pour chaque année avec Plotly Express (graphique en barres)
-    fig_bar_max = px.bar(df_max_values, x='Date', y='Value', title=f"Valeur maximale de {selected_indicator} pour chaque année", labels={'Value': selected_indicator})
+    fig_bar_max = px.bar(df_max_values, x='Date', y='Value', title=f"Evolution du  {selected_indicator}", labels={'Value': selected_indicator})
     fig_bar_max.update_layout(xaxis_title='Année', yaxis_title=f"Max {selected_indicator}")
 
 # Afficher le graphique en barres des valeurs maximales

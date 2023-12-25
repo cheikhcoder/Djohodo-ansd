@@ -63,9 +63,9 @@ elif choice == "Electrification":
 
 # Afficher le diagramme en fonction du choix de l'utilisateur
     if chart_type == "Barres":
-        fig = px.bar(filtered_data, x="regions", y="Value", title="Taux d'électrification par Région en 2022")
+        fig = px.bar(filtered_data, x="regions", y="Value", title="Taux d'électrification par Région ")
     elif chart_type == "Barres renverses":
-        fig = px.bar(filtered_data, x="Value", y="regions", title="Taux d'électrification par Région en 2022")
+        fig = px.bar(filtered_data, x="Value", y="regions", title="Taux d'électrification par Région ")
 
 # Afficher le graphique
     st.plotly_chart(fig, use_container_width=True)
@@ -85,7 +85,7 @@ elif choice == "Acces eau potable":
     fig_bar = px.bar(df, x='region', y='Value',
                  title=f"{selected_indicator} par région",
                  labels={'Value': selected_indicator, 'region': 'Région'})
-    fig_bar.update_layout(xaxis_title='Région', yaxis_title=selected_indicator)
+    fig_bar.update_layout(xaxis_title='Région', yaxis_title="pourcentage")
 
 # Afficher le graphique en barres
     st.plotly_chart(fig_bar, use_container_width=True)
